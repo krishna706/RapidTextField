@@ -8,7 +8,6 @@ RapidTextField *txtField = [[RapidTextField alloc] initWithFrame:CGRectMake(100,
 [txtField setPlaceholder:@"Enter"];
 
 [txtField addResignAction:^(id sender) 
-
     {
     
      [txtField resignFirstResponder];
