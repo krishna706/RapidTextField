@@ -9,19 +9,19 @@ RapidTextField *txtField = [[RapidTextField alloc] initWithFrame:CGRectMake(100,
 
 [txtField addResignAction:^(id sender) {
 
- [txtField resignFirstResponder];
+      [txtField resignFirstResponder];
 
  } 
 
  BeginEntryAction:^(id sender) {
 
- NSLog(@"BeginEntryAction called");
+       NSLog(@"BeginEntryAction called");
 
  } 
  EntryTextAction:^BOOL (id sender,NSString *enteredString) {
  
- NSLog(@"EntryTextAction called %@",enteredString);
- return NO;
+        NSLog(@"EntryTextAction called %@",enteredString);
+        return NO;
  
  }];
  
